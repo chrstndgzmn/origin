@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /** primary (navy blue from logo) **/
+  --color-primary: #1a2332;
+  --color-primary-rgb: 26, 35, 50;
+  --color-primary-contrast: #ffffff;
+  --color-primary-shade: #171f2c;
+  --color-primary-tint: #313b47;
+
+  /** secondary (accent blue) **/
+  --color-secondary: #2d4a6d;
+  --color-secondary-rgb: 45, 74, 109;
+  --color-secondary-contrast: #ffffff;
+  --color-secondary-shade: #284160;
+  --color-secondary-tint: #425c7c;
+
+  /** warning (gold from logo) **/
+  --color-warning: #c8a363;
+  --color-warning-rgb: 200, 163, 99;
+  --color-warning-contrast: #000000;
+  --color-warning-shade: #b08f57;
+  --color-warning-tint: #ceac73;
+
+  /** success **/
+  --color-success: #10b981;
+  --color-success-rgb: 16, 185, 129;
+  --color-success-contrast: #ffffff;
+  --color-success-shade: #0ea372;
+  --color-success-tint: #28c08e;
+
+  /** danger **/
+  --color-danger: #ef4444;
+  --color-danger-rgb: 239, 68, 68;
+  --color-danger-contrast: #ffffff;
+  --color-danger-shade: #d23c3c;
+  --color-danger-tint: #f15757;
+
+  /** dark **/
+  --color-dark: #1e293b;
+  --color-dark-rgb: 30, 41, 59;
+  --color-dark-contrast: #ffffff;
+  --color-dark-shade: #1a2434;
+  --color-dark-tint: #35404f;
+
+  /** light **/
+  --color-light: #f8fafc;
+  --color-light-rgb: 248, 250, 252;
+  --color-light-contrast: #000000;
+  --color-light-shade: #dadbdd;
+  --color-light-tint: #f9fbfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+
+
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
