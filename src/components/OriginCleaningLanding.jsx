@@ -26,6 +26,10 @@ const OriginCleaningLanding = () => {
     const isNew = true;
     const [showThankYou, setShowThankYou] = useState(false);
 
+    const sendGoogleEventTag = () =>{
+        gtag('event', 'conversion', {'send_to': 'AW-17795641256/Ssv_CMi58OYbEKjfz6VC'});
+    }
+
     const [lastSubmit, setLastSubmit] = useState(0);
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,7 +37,7 @@ const OriginCleaningLanding = () => {
         // const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
         // const templateId = import.meta.env.VITE_EMAILJS_NEWQUOTE_TEMPLATE_ID;
         // const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-        const serviceId = "service_jkc1cwc";
+        const serviceId = "service_8rk9nuz";
         const templateId = "template_8ev1c5g";
         const publicKey = "66df8ptQBf2Z8Arsm"; 
 
@@ -75,6 +79,7 @@ const OriginCleaningLanding = () => {
                     email: '',
                     phone: ''
                 });
+                sendGoogleEventTag();
             }, 5000);
         } catch (error) {
             console.error('Failed to send email:', error);
@@ -166,10 +171,14 @@ const OriginCleaningLanding = () => {
                         {/* <div className="flex flex-row items-center justify-center">
                 <span className="text-3xl md:text-4xl lg:text-5xl  leading-tight text-[#c8a363]">ORIGIN CLEANING</span>
             </div> */}
-                        <a href={contact.hrefNumber} className="flex items-center gap-2 bg-[#c8a363] hover:bg-[#b08f57] text-black px-4 md:px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                        {/* <a href={contact.hrefNumber} className="flex items-center gap-2 bg-[#c8a363] hover:bg-[#b08f57] text-black px-4 md:px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
                             <Phone className="w-5 h-5" />
                             <span className="hidden sm:inline">{contact.phoneNumber}</span>
-                        </a>
+                        </a> */}
+                        <a href="#quote-form" className="flex items-center gap-2 bg-[#c8a363] hover:bg-[#b08f57] text-black px-4 md:px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                                <Sparkles className="w-6 h-6" />
+                                Get Started!
+                            </a>
                     </div>
                 </nav>
 
@@ -183,6 +192,7 @@ const OriginCleaningLanding = () => {
                             isNew  && 
                             <p className="text-xl md:text-2xl text-[#ceac73] mb-8">
                                 Trusted by Calgary businesses for reliable, professional cleaning services
+                                {/* Your partner in maintaining clean, hygienic, and high-performance business environments. */}
                             </p>
                         }
                         
@@ -191,10 +201,10 @@ const OriginCleaningLanding = () => {
                                 <Sparkles className="w-6 h-6" />
                                 Get Your Free Quote
                             </a>
-                            <a href={contact.hrefNumber} className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 border-2 border-white/30 inline-flex items-center justify-center gap-2">
+                            {/* <a href={contact.hrefNumber} className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 border-2 border-white/30 inline-flex items-center justify-center gap-2">
                                 <Phone className="w-6 h-6" />
                                 Call Now
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -620,10 +630,10 @@ const OriginCleaningLanding = () => {
                                 <Sparkles className="w-6 h-6" />
                                 Schedule Your Free Assessment
                             </a>
-                            <a href={contact.hrefNumber} className="bg-white hover:bg-[#f8fafc] text-[#1a2332] px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl inline-flex items-center justify-center gap-2">
+                            {/* <a href={contact.hrefNumber} className="bg-white hover:bg-[#f8fafc] text-[#1a2332] px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl inline-flex items-center justify-center gap-2">
                                 <Phone className="w-6 h-6" />
                                 Call Us Now
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
