@@ -1,16 +1,28 @@
-# React + Vite
+# Origin Corporate Cleaning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lead-generation landing page for **Origin Corporate Cleaning**, a commercial cleaning company in Calgary that serves gyms, corporate offices and medical practices.
 
-Currently, two official plugins are available:
+**Live:** https://origincorporatecleaning.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Add a screenshot of the landing page here -->
 
-## React Compiler
+## Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Quote request form.** Collects business type, square footage, cleaning frequency and contact details, then emails the request straight to the business through EmailJS. No backend needed.
+- **Spam protection.** Client-side rate limiting on quote submissions.
+- **Industry sections.** Separate pitches for gyms and fitness centers, corporate offices and medical practices.
+- **Conversion tracking.** Google Ads conversion tag wired into the page.
+- **Responsive.** Tailwind CSS layout that works from phone to desktop.
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React 18 · Vite · Tailwind CSS · EmailJS · Lucide icons · Firebase Hosting
+
+## Running locally
+
+```bash
+npm install
+npm run dev               # http://localhost:5173
+npm run build
+npm run deploy:hosting    # build and deploy to Firebase Hosting
+```
